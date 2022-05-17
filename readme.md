@@ -1,11 +1,11 @@
 # WNBoilerplate
 
->this is a boilerplate version of a Google OAuth2 website
+>this is a prettified version of a Google OAuth2 website
 
-this was rather painful
+this was even more painful
 
-im going to flesh it out to make it look purdy okay, prob as a fork or a pull, idfk atm
+i haven't actually prettified it yet okay, chill out
 
-love ya
+cheers
 
 -Tav
