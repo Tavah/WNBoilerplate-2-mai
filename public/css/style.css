@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 0ch;
+    left: 0ch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    background: white;
+    z-index: 9;
+    border: 5px;
+    border-color: darkslategrey;
+}
+
+.links-container {
+    display: flex;
+    list-style: none;
+}
+
+.link {
+    font-family: 'Readex Pro';
+    font-weight: 300;
+    padding: 0 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    background-image: linear-gradient(
+        to right,
+        #2833ff,
+        #54b3d6 50%,
+        #000 50%
+      );
+    background-size: 200% 100%;
+    background-position: -100%;
+    background-clip: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+}
+
+.link:hover {
+    background-position: 0;
+}
+
+.link:hover::before {
+    width: 100%;
+}
+
+
+.bottom-right {
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+.login-link {
+    font-weight: 400 !important;
+}
+
+.login-btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4px;
+    border-radius: 12px;
+}
+
+.logo {
+    width: 4em;
+    height: 3em;
+}
+
+.header {
+    margin-top: 2.5rem;
+    width: 100%;
+    height: calc(100vh - 2.5rem);
+    background: url(../img/header.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.heading {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem
+}
+
+.heading .small {
+    display: block;
+    font-size: 2rem;
+}
+
+.heading .no-fill {
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.s-bar {
+    overflow: hidden;
+    background-color: #e9e9e9;
+    color: rgb(72, 72, 72);
+}
+
