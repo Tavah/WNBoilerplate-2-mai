@@ -97,7 +97,7 @@
 }
 
 .header {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     width: 100%;
     height: calc(100vh - 2.5rem);
     background: url(../img/header.png);

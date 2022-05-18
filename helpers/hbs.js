@@ -34,6 +34,7 @@ module.exports = {
             return ''
         }
     },
+    
     select: function (selected, options) {
         return options
             .fn (this)

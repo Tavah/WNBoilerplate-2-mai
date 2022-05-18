@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+.wrapper {
+    margin-top: 2.5rem;
+    width: 100%;
+    height: calc(100vh - 2.5rem);
+    background: url(../img/gradient.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.login-container {
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.card {
+    color: white;
+    background-color: rgb(28, 28, 28);
+    opacity: 0.69;
+}
+
+.log-btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(176, 0, 0);
+}
+
+.log-btn:hover {
+    background-color: red;
+}

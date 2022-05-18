@@ -3,7 +3,7 @@ module.exports = {
         if (req.isAuthenticated()) {
             return next()
         } else {
-            res.redirect('/')
+            res.render('error/403')
         }
     },
     ensureGuest: function (req, res, next) {

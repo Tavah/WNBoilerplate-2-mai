@@ -19,7 +19,7 @@ router.post('/', ensureAuth, async (req, res) => {
         res.redirect('/dashboard')
 
     } catch (err) {
-        console.error(err)
+        
         res.render('error/500')
     }
 })
@@ -38,7 +38,7 @@ router.get('/', ensureAuth, async (req, res) => {
         })
 
     } catch (err) {
-        console.error(err)
+        
         res.render('error/500')
     }
 })
@@ -57,7 +57,7 @@ router.get('/user/:userId', ensureAuth, async (req, res) => {
             stories
         })
     } catch (err) {
-        console.error(err)
+        
         res.render('error/500')
     }
 })
@@ -81,7 +81,7 @@ router.get('/:id', ensureAuth, async (req, res) => {
             })
           }
     } catch (error) {
-        console.error(err)
+        console.error()
         res.render('error/404')
     }
 })
@@ -107,7 +107,6 @@ router.get('/edit/:id', ensureAuth, async (req, res) => {
         }
 
     } catch {
-        console.error(err)
         return res.render('error/500')
     }
 })
@@ -134,7 +133,7 @@ router.put('/:id', ensureAuth, async (req, res) => {
         }
 
     } catch {
-        console.error(err)
+        
         return res.render('error/500')       
     }
 })
@@ -156,7 +155,7 @@ router.delete('/:id', ensureAuth, async (req, res) => {
         res.redirect('/dashboard')
       }
     } catch (err) {
-      console.error(err)
+      
       return res.render('error/500')
     }
   })
